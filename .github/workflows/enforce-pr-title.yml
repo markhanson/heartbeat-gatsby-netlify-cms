@@ -1,0 +1,10 @@
+name: issue-key-enforcement
+
+on: [pull_request]
+
+jobs:
+    check-jira-issue-in-title:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check for Jira Issue in Title
+              uses: ryanvade/enforce-pr-title-style-action@v1
