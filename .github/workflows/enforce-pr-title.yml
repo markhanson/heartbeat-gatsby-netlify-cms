@@ -1,6 +1,10 @@
 name: issue-key-enforcement
 
-on: [pull_request]
+on:
+    pull_request:
+        branches-ignore:
+            - 'main'
+            - 'master'
 
 jobs:
     check-jira-issue-in-title:
